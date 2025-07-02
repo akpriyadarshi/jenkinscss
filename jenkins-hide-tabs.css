@@ -1,14 +1,9 @@
-/* Hide top tab bar (All, MyView, etc.) */
-div.tabBar {
+/* Hide Check File Fingerprint link */
+a[href$='fingerprint'] {
     display: none !important;
 }
 
-/* Hide the "+" tab */
-a.addTab {
-    display: none !important;
-}
-
-/* Optional: hide breadcrumbs */
-#breadcrumbBar {
+/* Hide Project Relationship link */
+a[href$='/dependency-check/'] {
     display: none !important;
 }
