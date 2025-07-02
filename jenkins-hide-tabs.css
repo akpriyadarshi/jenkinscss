@@ -1,0 +1,14 @@
+/* Hide top tab bar (All, MyView, etc.) */
+div.tabBar {
+    display: none !important;
+}
+
+/* Hide the "+" tab */
+a.addTab {
+    display: none !important;
+}
+
+/* Optional: hide breadcrumbs */
+#breadcrumbBar {
+    display: none !important;
+}
