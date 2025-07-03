@@ -1,9 +1,15 @@
-/* Hide Check File Fingerprint link */
-a[href$='fingerprint'] {
-    display: none !important;
+/* Rename "Build with Parameters" button to "RUN" */
+button[formaction*="buildWithParameters"]::after {
+  content: "RUN";
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  padding: 5px 15px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
-/* Hide Project Relationship link */
-a[href$='/dependency-check/'] {
-    display: none !important;
+button[formaction*="buildWithParameters"] {
+  color: transparent !important; /* hides original text */
+  background: none !important;
 }
